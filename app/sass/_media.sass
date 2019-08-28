@@ -1,0 +1,169 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    .nav-item
+        margin-right: 18px
+        
+    .nav-link
+        font-size: 14px
+
+    .logo-block
+        height: 50px
+
+    .home-wrap__greeting
+        font-size: 35px
+
+    .home-wrap__name
+        font-size: 55px
+
+    .mouse-link
+        height: 35px
+
+    .about-title
+        font-size: 30px
+
+    .about-subtitle
+        font-size: 14px
+        margin-bottom: 15px
+
+    .about, .services, .clients, .contact
+        padding: 40px 0
+
+    .about-desc
+        font-size: 13px
+        p 
+            margin-bottom: 10px
+
+    .skillbar-title span
+        font-size: 10px
+        line-height: 30px
+
+    .skillbar, .skillbar-bar, .skillbar-title span
+        height: 30px
+
+    .services-title
+        font-size: 16px
+        margin-bottom: 10px
+
+    .services-desk
+        font-size: 14px
+
+    .services-icon
+        font-size: 20px
+        height: 50px
+        width: 50px
+        line-height: 50px
+        margin-bottom: 10px
+
+    .services-item
+        padding: 20px 10px
+
+    .testim .cont div p
+        font-size: 14px
+
+    .socials__item
+        font-size: 40px
+
+    .copyright
+        font-size: 11px
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+    .home
+        background-position-x: 60%
+    .navbar-toggle
+        display: block
+        position: absolute
+        right: 10%
+        
+
+
+    .navbar-collapse
+        display: none
+
+    .navbar-nav
+        flex-direction: column
+        text-align: center
+
+    .nav-link
+        color: $text
+
+    .services-item
+        height: 350px
+
+    .about-pic
+        justify-content: center
+        img
+            height: 400px
+
+    .about-title, .about-subtitle
+        text-align: center
+
+    .home-wrap
+        height: 80vh
+        position: absolute
+        top: 80px
+            
+// ≥576px
++media-breakpoint-down(xs)
+    .home
+        background-position-x: 70%
+
+    .services-item
+        height: auto
+
+    .home-wrap__name
+        font-size: 40px
+        text-align: center
+
+    .blc
+        font-size: 20px
+    .cd-headline.clip b
+        font-size: 20px
+    
+    .cd-headline.clip span
+        margin-top: -7px
+        padding: 0
+
+    .navbar-collapse
+        margin-right: 40px
+
+    .home-wrap
+        height: 80vh
+        position: absolute
+        top: 80px
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

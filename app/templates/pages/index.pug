@@ -1,0 +1,261 @@
+extends ../template
+
+block variables
+    - var title = 'In Young Choi - Frontend Developer';
+    - var desc ='In Young Choi - Frontend Developer';
+
+block content
+    body(data-spy='scroll' data-target='#navbarResponsive')
+        .loaderArea
+            .cssload-loader.loader
+                .cssload-inner.cssload-one
+                .cssload-inner.cssload-two
+                .cssload-inner.cssload-three
+        section.home#home
+            .default.h-100
+                .container.h-100
+                    nav.navbar.navbar-default
+                        .container
+                            a.navbar-brand(href="/").logo
+                                .logo-block
+                                    img.logo(src="img/logo-w.png", alt="Logo")
+                            .navbar-header
+                                a.navbar-toggle(data-toggle='collapse' data-target='#navbarResponsive')
+                                    i.fa.fa-bars
+                            
+                            .collapse.navbar-collapse#navbarResponsive
+                                ul.nav.navbar-nav
+                                    li.nav-item
+                                        a(href="#home" data-scroll-nav='0').nav-link.active Home
+                                    li.nav-item
+                                        a(href="#about" data-scroll-nav='1').nav-link About
+                                    li.nav-item
+                                        a(href="#services" data-scroll-nav='2').nav-link Services
+                                    li.nav-item
+                                        a(href="#portfolio" data-scroll-nav='3').nav-link Portfolio
+                                    li.nav-item
+                                        a(href="#clients" data-scroll-nav='4').nav-link Clients
+                                    li.nav-item
+                                        a(href="#contact" data-scroll-nav='5').nav-link Contact
+
+
+
+
+                    .home-wrap
+                        .home-wrap__greeting Hello
+                        h1.home-wrap__name I am In Young Choi
+                        h2.cd-headline.clip
+                            span.blc A 
+                            span.cd-words-wrapper
+                                b.is-visible Frontend Developer
+                                b Designer
+
+                        a.mouse-link(href="#about")
+                            .scroll
+        section.about#about
+            .container
+                .row
+                    .col-md-5
+                        .about-pic
+                            img(src="img/portrait.jpg", alt="In Young Choi").img-responsive
+                    .col-md-7
+                        .about-info
+                            h2.about-title About Me.
+                        .about-subtitle Frontend Developer
+                        .about-desc
+                            p My name is #[b In Young Choi]. I love coding and developing user-friendly websites. I make Static, Liquid, Adaptive, or Responsive sites, code sites PSD to HTML &amp; CSS. 
+                            p For fast coding I use preprocessors: SASS/SCSS, JADE(Pug), Flexbox, Bootstrap 4, CSS grid layout.
+                            p I am interested in doing quality work on the conscience and making it nice for you and me. I’m responsible and well organised. 
+                            p I like to learn and develop in technology. Not afraid of hard work. I will do my best to work with you. I am always looking for new modern solutions, creative approach, help with advice and offer options for profitable conditions.   
+                        .skills
+                            .skillbar.clearfix(data-percent='95%')
+                                .skillbar-title(style='background: #d35400;') #[span HTML5]
+                                .skillbar-bar(style='background: #e67e22;')
+                                .skill-bar-percent 95%
+                            // End Skill Bar
+                            .skillbar.clearfix(data-percent='90%')
+                                .skillbar-title(style='background: #2980b9;') #[span CSS3]
+                                .skillbar-bar(style='background: #3498db;')
+                                .skill-bar-percent 90%
+                            // End Skill Bar
+                            .skillbar.clearfix(data-percent='70%')
+                                .skillbar-title(style='background: #2c3e50;') #[span JS/jQuery]
+                                .skillbar-bar(style='background: #2c3e50;')
+                                .skill-bar-percent 70%
+                            // End Skill Bar
+                            .skillbar.clearfix(data-percent='45%')
+                                .skillbar-title(style='background: #46465e;') #[span PHP]
+                                .skillbar-bar(style='background: #5a68a5;')
+                                .skill-bar-percent 45%
+                            // End Skill Bar
+                            .skillbar.clearfix(data-percent='40%')
+                                .skillbar-title(style='background: #333333;') #[span Wordpress/Jekyll]
+                                .skillbar-bar(style='background: #525252;')
+                                .skill-bar-percent 40%
+                            // End Skill Bar
+                            .skillbar.clearfix(data-percent='70%')
+                                .skillbar-title(style='background: #27ae60;') #[span Photoshop/XD/Illustrator]
+                                .skillbar-bar(style='background: #2ecc71;')
+                                .skill-bar-percent 70%
+                            // End Skill Bar
+        section.services#services
+            .container
+                h2.about-title.text-center.mb Services.
+                .row
+                    .col-md-4.mb.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-desktop
+                            h3.services-title Web development
+                            p.services-desk I develop custom websites, keeping them unique, functional and modern. Considering the latest technologies like HTML5, CSS3, PHP and more.
+                    .col-md-4.mb.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-id-card-o
+                            h3.services-title Design logos and corporate identity
+                            p.services-desk When a company begins to consider ways to visually represent themselves, their product, service. Together with you I make an appealing design that suits your business.
+                    .col-md-4.mb.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-window-maximize
+                            h3.services-title Adaptive development
+                            p.services-desk A website must be properly viewed on a wide variety of screens. I make sure that your website is always optimally usable on any device.
+                    .col-md-4.mb.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-lock
+                            h3.services-title Maintenance &amp; Support
+                            p.services-desk I provide on-going support and maintenance services to ensure that your website always runs smoothly. I provide honest advice and the best possible support for you to reach your goals.
+                    .col-md-4.mb.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-file-code-o
+                            h3.services-title Website restyling
+                            p.services-desk I can help you to update it into a modern, user-friendly and responsive website that will convert more visitors into customers and boost your conversion rate.
+                    .col-md-4.col-sm-6
+                        .services-item 
+                            .services-block
+                                .services-icon
+                                    i.fa.fa-line-chart 
+                            h3.services-title SEO
+                            p.services-desk Regardless if you already work, live and breathe the internet or if you’re just about to craft your online presence, there’s one magic term that you’ve probably heard of – SEO. I can help improve the visibility of a website in search engines. The primary function of SEO is to drive more useful traffic to a site that converts into sales.
+        section.portfolio#portfolio
+            .container
+                h2.about-title.text-center.mb Portfolio.
+                .gallery
+                    .row
+                        .col-md-4.mb.col-sm-6     
+                            .portfolio-pic
+                                img(src="img/5.jpg", alt="project").img-responsive
+                                .overlay
+                                    .overlay-block.h-100.d-flex.flex-column.justify-content-center.align-items-center
+                                        .overlay-title Website
+                                        .overlay-icon
+                                            a.overlay-link(href="https://co23593.tmweb.ru")
+                                                i.fa.fa-link
+                        .col-md-4.mb.col-sm-6 
+                            .portfolio-pic
+                                img(src="img/1.jpg", alt="project").img-responsive
+                                .overlay
+                                    .overlay-block.h-100.d-flex.flex-column.justify-content-center.align-items-center
+                                        .overlay-title Website
+                                        .overlay-icon
+                                            a.overlay-link(href="https://co23593.tmweb.ru")
+                                                i.fa.fa-link
+                        .col-md-4.mb.col-sm-6 
+                            .portfolio-pic
+                                img(src="img/2.jpg", alt="project").img-responsive
+                                .overlay
+                                    .overlay-block.h-100.d-flex.flex-column.justify-content-center.align-items-center
+                                        .overlay-title Website
+                                        .overlay-icon
+                                            a.overlay-link(href="https://www.futureconsulting.biz/")
+                                                i.fa.fa-link
+                        .col-md-4.mb.col-sm-6    
+                            .portfolio-pic
+                                img(src="img/3.jpg", alt="project").img-responsive
+                                .overlay
+                                    .overlay-block.h-100.d-flex.flex-column.justify-content-center.align-items-center
+                                        .overlay-title Website
+                                        .overlay-icon
+                                            a.overlay-link(href="https://mrburger.tmweb.ru/")
+                                                i.fa.fa-link
+                        .col-md-4.col-sm-6  
+                            .portfolio-pic
+                                img(src="img/4.jpg", alt="project").img-responsive
+                                .overlay
+                                    .overlay-block.h-100.d-flex.flex-column.justify-content-center.align-items-center
+                                        .overlay-title Website
+                                        .overlay-icon
+                                            a.overlay-link(href="https://resident-canada.ru/")
+                                                i.fa.fa-link
+        section.clients#clients
+            .container
+                h2.about-title.text-center.mb Testimonials.
+                #testim.testim
+                    .wrap
+                        span#right-arrow.arrow.right.fa.fa-chevron-right
+                        span#left-arrow.arrow.left.fa.fa-chevron-left
+                        ul#testim-dots.dots
+                            li.dot.active
+                            li.dot
+                            li.dot
+                        #testim-content.cont
+                            .active
+                                .img
+                                    img(src='https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg', alt='')
+                                h2 Helen Lagay
+                                p.clients-text Working with In Young was better than expected and we had really high expectations. 
+                            div
+                                .img
+                                    img(src='https://image.ibb.co/cNP817/pexels_photo_220453.jpg', alt='')
+                                h2 Alex Prip
+                                p.clients-text In Young has done a fantastic job overall. Not only the site is to design, the code is very clean and slick. New design for our site.
+                            div
+                                .img
+                                    img(src='https://image.ibb.co/iN3qES/pexels_photo_324658.jpg', alt='')
+                                h2 Eugenia Abman
+                                p.clients-text In Young helped us create and develop several brand strategies and website. With expertise and understanding of various aspects and platforms we were able to accomplish our goals. 
+        section.contact#contact
+            .container
+                h2.about-title.text-center.mb Contact me.
+                .row.justify-content-center
+                    .col-md-8
+                        .form
+                            form.form__elem#form__elem(action="server.php", method="post")
+                                .fifty
+                                    input.form__input#user-name(type="text" name="user-name" placeholder="Name *" required)
+                                    input.form__input#user-mail(type="text" name="user-mail" placeholder="Email *" required)
+                                textarea.form__input.form__textarea#comment(type="text" name="comment" placeholder="Message *" required)
+                                .btn-send
+                                    button.btn__submit.order__btn(type="submit") Submit
+                        .socials
+                            ul.socials__list
+                                li.socials__item
+                                    a.socials__link(href="https://github.com/inyoungch")
+                                        i.fa.fa-github 
+                                li.socials__item
+                                    a.socials__link(href="mailto:inkatsoy08@gmail.com")
+                                        i.fa.fa-google
+                                li.socials__item
+                                    a.socials__link(href="https://teleg.run/InYoung08")
+                                        i.fa.fa-telegram 
+                                li.socials__item
+                                    a.socials__link(href="https://www.instagram.com/in_young_ch/")
+                                        i.fa.fa-instagram  
+        footer.footer
+            .container
+                .row
+                    .col-md-8.col-7
+                        .copyright.h-100.d-flex.align-items-center
+                            span Copy Right 2019 © By In Young Choi. All Rights Reserved.
+                    .col-md-4.d-flex.justify-content-end.col-5
+                        .footer-logo
+                            a.navbar-brand(href="/") 
+                                .logo-block
+                                    img.logo(src="img/logo-w.png", alt="Logo")
